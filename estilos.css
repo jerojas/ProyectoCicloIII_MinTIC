@@ -11,3 +11,21 @@ background-color: blue;
    margin-top: 5rem;
 
 }
+
+#logo{
+
+    margin-top: 20rem;
+    color: white;
+  
+}
+
+#titulo{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#btn-registrar{
+
+    color: white;
+}
