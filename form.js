@@ -31,27 +31,6 @@ function checkUsername(valor){
 
 }
 
-var numeros="0123456789";
-function tiene_numeros(texto){
-    for(i=0; i<texto.length; i++){
-       if (numeros.indexOf(texto.charAt(i),0)!=-1){
-          return 1;
-       }
-    }
-    return 0;
- }
-
- var letras="abcdefghyjklmnñopqrstuvwxyz";
-
-function tiene_letras(texto){
-   texto = texto.toLowerCase();
-   for(i=0; i<texto.length; i++){
-      if (letras.indexOf(texto.charAt(i),0)!=-1){
-         return 1;
-      }
-   }
-   return 0;
-}
 
 function checkCorreo(valor){
 
@@ -89,12 +68,12 @@ function checkContrasena(valor){
  
 }
 
-  
+valor1 =  document.getElementById("contrasena")
 function checkConfirmContrasena(valor1, valor2){
 
   
 
-   if ((checkContrasena(valor2))&& (valor1===valor2)){
+   if ((checkContrasena(valor2)) && (valor1===valor2)){
 
       return true
    }else{
