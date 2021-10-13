@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="form.js"></script>
+    <script src="registro.js"></script>
     <title>Registrar usuario</title>
 </head>
 
@@ -37,15 +38,15 @@
 
                             <div class="form-group">
                                 <label for="contrasena">Password</label>
-                                <input type="password" name="contrasena" id="contrasena" onchange="checkContrasena(event.target.value)" class="form-control">
+                                <input type="text" name="contrasena" id="Contrasena" onchange="checkContrasena(event.target.value)" class="form-control">
                             </div>
 
                             <div class="form-group">
                                 <label for="confirmarContrasena">Confirmar Password</label>
-                                <input type="password" name="confirmarContrasena" id="confirmarContrasena" onchange="checkConfirmContrasena(event.target.value)" class="form-control">
+                                <input type="text" name="confirmarContrasena" id="confirmarContrasena" onchange="checkConfirmContrasena(event.target.value)" class="form-control">
                             </div><br>
                             <div class="input-group mb-3">
-                                <input class="btn btn-success" id="btn-submit-form" type="submit" value="Registrar">
+                                <input class="btn btn-success" onclick="agregarRegistro(event)" id="btn-submit-form"  type="button" value="Registrar">
                             </div>
                  
                         </form>
