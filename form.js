@@ -69,6 +69,7 @@ function checkContrasena(valor){
 }
 
 valor1 =  document.getElementById("contrasena")
+valor2 =  document.getElementById("confirmarContrasena")
 function checkConfirmContrasena(valor1, valor2){
 
   
