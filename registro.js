@@ -33,7 +33,6 @@ function filtrarCorreo(arreglo) {
     
 }
 
-
 function agregarRegistro() {
 
     var username = document.getElementById("Username").value;
