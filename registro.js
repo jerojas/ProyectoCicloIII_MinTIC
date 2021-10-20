@@ -4,12 +4,13 @@ let registros = []
 function obtenerUsername(arreglo) { 
 
     var arreglonombres= [];
-    var regExp = /(?=.*[0 - 9])+/gi;
+    var regExp = /^([0-9]+[a-zA-Z]+|[a-zA-Z]+[0-9]+)[0-9a-zA-Z]*$/;
+
 
     for (let i = 0; i < arreglo.length; i++) {
         
-        if(arreglo[i].nombre.match(regExp) != null){
-            arreglonombres.push(arreglo[i].nombre);
+        if(arreglo[i].usuario.match(regExp) != null){
+            arreglonombres.push(arreglo[i].usuario);
         }    
     }
 
@@ -30,14 +31,15 @@ function filtrarCorreo(arreglo) {
     
     }
     
+    return arreglocorreo; 
     
 }
 
 function agregarRegistro() {
 
-    var username = document.getElementById("Username").value;
-    var correo = document.getElementById("Correo").value;
-    var contrasena = document.getElementById("Contrasena").value;
+    var username = document.getElementById("username").value;
+    var correo = document.getElementById("correo").value;
+    var contrasena = document.getElementById("contrasena").value;
 
     console.log(username)
     console.log(correo)
